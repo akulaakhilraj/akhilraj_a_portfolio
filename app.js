@@ -585,7 +585,8 @@ function Footer() {
   return (
     <div className="footer">
       <div className="container small">
-        <span>Boca Raton, FL </span>
+        <span>Boca Raton, FL • </span>
+        {/* <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a> •{" "} */}
         <a
           href="https://www.linkedin.com/in/akhil789123a1/"
           target="_blank"
