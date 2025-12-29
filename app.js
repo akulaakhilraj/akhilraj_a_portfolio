@@ -1,14 +1,12 @@
-// const { useMemo, useState } = React;
 const { useMemo, useState, useEffect } = React;
 
-/* Smooth scroll helper */
 function scrollToId(id) {
   const el = document.getElementById(id);
   if (!el) return;
   el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-/* ============= NAVBAR ============= */
+
 function Navbar() {
   return (
     <div className="nav">
@@ -125,7 +123,6 @@ function Hero() {
   const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // your drive photo
   const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
-  // ---- rotating role text ----
   const roles = [
     "Machine Learning Engineer",
     "Data Scientist",
@@ -136,38 +133,30 @@ function Hero() {
   useEffect(() => {
     const id = setInterval(() => {
       setRoleIndex((i) => (i + 1) % roles.length);
-    }, 2000); // 5 seconds
+    }, 1500); 
     return () => clearInterval(id);
   }, []);
 
   const currentRole = roles[roleIndex];
-  // ----------------------------
-
   return (
     <section className="hero" id="home">
       <div className="container hero-grid">
-        {/* LEFT TEXT */}
         <div className="hero-left">
           <h2 className="hero-pre">Hi, I'm</h2>
           <h1 className="hero-name">Akhil Raj Akula</h1>
-
-          {/* 👉 This line now changes every 5 sec */}
           <div className="hero-ml-line">
             <span className="hero-ml">{currentRole}</span>
-            
           </div>
           <p className="hero-desc">
             I design and develop efficient data pipelines, create insightful
             visualizations, and build machine learning solutions. Passionate
             about data-driven decision making and continuous learning.
           </p>
-
           <div className="btn-row">
             <button
               className="btn hero-btn primary"
               type="button"
-              onClick={() => scrollToId("projects")}
-            >
+              onClick={() => scrollToId("projects")}>
               View My Work
             </button>
             <a
@@ -196,7 +185,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* RIGHT PHOTO (unchanged) */}
         <div className="hero-right">
           <div className="photo-orbit">
             <div className="photo-circle">
@@ -218,8 +206,6 @@ function Hero() {
 }
 
 
-
-/* ============= SECTION TITLE ============= */
 function SectionTitle({ title }) {
   return (
     <div className="section-title">
@@ -229,7 +215,6 @@ function SectionTitle({ title }) {
   );
 }
 
-/* ============= ABOUT ============= */
 function About() {
   return (
     <section className="section" id="about">
@@ -255,12 +240,11 @@ function About() {
   );
 }
 
-/* ============= SKILLS ============= */
 function Skills() {
   const groups = useMemo(
     () => [
       {
-        title: "Data Scientist Toolkit",
+        title: "Data Scientist",
         items: [
           "Python",
           "SQL",
@@ -269,7 +253,6 @@ function Skills() {
           "NumPy",
           "Predictive Modeling",
           "EDA",
-          "Hypothesis Testing",
           "A/B Testing",
         ],
       },
@@ -279,23 +262,26 @@ function Skills() {
           "XGBoost",
           "TensorFlow",
           "PyTorch",
-          "SHAP",
           "Clustering",
           "Feature Engineering",
           "Model Deployment",
         ],
       },
       {
-        title: "Data Engineering",
-        items: ["Spark", "Airflow", "Kafka", "Snowflake", "dbt", "ETL Pipelines"],
+        title: "Data Engineering & Warehousing",
+        items: ["Spark", "Airflow", "Kafka", "Data Modeling","Data Warehouse", "Stored Procedures & DDL", "ETL Pipelines"],
+      },
+      {
+         title: "Backend & APIs",
+        items: ["Node.js", "Express.js", "RESTful APIs", "Authentication & Authorization","MongoDB", "API Integration"],
       },
       {
         title: "Cloud & DevOps",
-        items: ["AWS", "GCP", "Docker", "Kubernetes", "Terraform", "MLflow", "Git"],
+        items: ["AWS", "Docker", "Kubernetes", "Terraform", "MLflow","Git", "Postman" ],
       },
       {
         title: "Visualization & Tools",
-        items: ["Tableau", "Power BI", "Looker"],
+        items: ["Tableau", "Power BI"],
       },
     ],
     []
@@ -411,10 +397,6 @@ function Experience() {
 }
 
 
-
-
-
-/* ============= PROJECTS ============= */
 function Projects() {
   const projects = [
     {
@@ -428,15 +410,17 @@ function Projects() {
       tags: ["SQL", "Hive", "Tableau", "Python"],
     },
     {
-      title: "Scalable Data Pipeline",
-      desc: "PySpark pipeline on cloud-style architecture processing millions of records daily, enabling real-time ingestion and transformation.",
-      tags: ["PySpark", "Airflow", "AWS", "Lambda"],
-    },
-    {
-      title: "API-Driven Dashboard",
-      desc: "Backend API serving ML predictions with a responsive dashboard; CI/CD with GitHub Actions.",
-      tags: ["Flask / Node.js", "EC2", "Bootstrap", "GitHub Actions"],
-    },
+  title: "Enterprise Data Warehouse & SQL ETL System",
+  desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
+  tags: ["SQL", "ETL Pipelines", "Data Warehouse", "Star Schema", "Git"]
+}, 
+{
+  title: "Dev Tinder Matching App",
+  desc: "Built cross-platform MVP using React Native & React.js with Node/Express backend; implemented auth, MongoDB data layer, AI-driven audio pipeline, and landing site with Git-based workflow.",
+  tags: ["React Native", "React.js", "Node.js", "Express.js", "MongoDB", "AI Pipeline", "Tailwind CSS"]
+}
+
+
   ];
 
   return (
@@ -464,7 +448,6 @@ function Projects() {
   );
 }
 
-/* ============= CONTACT ============= */
 function Contact() {
   const [status, setStatus] = useState("");
 
@@ -531,7 +514,6 @@ function Contact() {
   );
 }
 
-/* ============= FOOTER ============= */
 function Footer() {
   return (
     <div className="footer">
@@ -542,7 +524,6 @@ function Footer() {
   );
 }
 
-/* ============= ROOT APP ============= */
 function App() {
   return (
     <>
