@@ -161,7 +161,7 @@ function Hero() {
             </button>
             <a
               className="btn hero-btn outline"
-              href="https://docs.google.com/document/d/1p1ofsprXIXUnNf4pN_nEaq3VSfqmIPT9/edit"
+              href="https://drive.google.com/file/d/1lUOa-tGeijzuyvRAN7szNbScPF3NgjMU/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
