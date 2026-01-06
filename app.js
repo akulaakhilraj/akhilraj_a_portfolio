@@ -122,7 +122,7 @@ function Navbar() {
 function Hero() {
   //const FILE_ID = "https://drive.google.com/file/d/13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy/view?usp=sharing"; // your drive photo
   //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
-  const profileUrlLink="https://drive.google.com/file/d/13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy/view?usp=sharing"
+  const profileUrlLink="https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=sharing"
 
 
   const roles = [
