@@ -120,8 +120,9 @@ function Navbar() {
 // }
 
 function Hero() {
-  const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // your drive photo
-  const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
+  //const FILE_ID = "https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"; // your drive photo
+  //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
+  const profileUrl="https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"
 
   const roles = [
     "Machine Learning Engineer",
@@ -379,7 +380,7 @@ function Experience() {
             </div>
           </div>
           <div className="experience-right">
-            <h3 className="exp-role">Data Scientist</h3>
+            <h3 className="exp-role">Software Engineer</h3>
             <div className="exp-meta">
               Digient Technology Private Limited, Chennai, India &nbsp;|&nbsp; June 2021 – Nov 2023
             </div>
@@ -418,7 +419,7 @@ function Experience() {
             </div>
           </div>
           <div className="experience-right">
-            <h3 className="exp-role">Data Engineer</h3>
+            <h3 className="exp-role">Software Engineer</h3>
             <div className="exp-meta">
               India Plays, Chennai, India &nbsp;|&nbsp; June 2020 – May 2021
             </div>
