@@ -120,12 +120,8 @@ function Navbar() {
 // }
 
 function Hero() {
-const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"; 
-  const profileUrl = `https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view`;
- // const profileUrl="https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=sharing"
-
-
-
+  const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
+  const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
     "Machine Learning Engineer",
@@ -166,7 +162,6 @@ const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW";
             <a
               className="btn hero-btn outline"
               href="https://docs.google.com/document/d/1dr1_G-xpTMq_uMu_tP9lOov9XtiUudJ-/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
-              //"https://drive.google.com/file/d/1lUOa-tGeijzuyvRAN7szNbScPF3NgjMU/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
