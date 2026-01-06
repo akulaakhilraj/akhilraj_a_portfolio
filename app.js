@@ -120,7 +120,7 @@ function Navbar() {
 // }
 
 function Hero() {
-//const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"; 
+const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"; 
   const profileUrl = `https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view`;
  // const profileUrl="https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=sharing"
 
@@ -199,8 +199,7 @@ function Hero() {
                 className="photo-img"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  e.currentTarget.src = "https://lh3.googleusercontent.com/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"
-;
+                  e.currentTarget.src = `https://lh3.googleusercontent.com/d/${FILE_ID}`;
                 }}
               />
             </div>
