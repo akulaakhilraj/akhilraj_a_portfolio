@@ -122,7 +122,7 @@ function Navbar() {
 function Hero() {
   //const FILE_ID = "https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"; // your drive photo
   //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
-  const profileUrl="https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"
+  const profileUrlLink="https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"
 
   const roles = [
     "Machine Learning Engineer",
@@ -190,7 +190,7 @@ function Hero() {
           <div className="photo-orbit">
             <div className="photo-circle">
               <img
-                src={profileUrl}
+                src={profileUrlLink}
                 alt="Akhil Raj Akula"
                 className="photo-img"
                 referrerPolicy="no-referrer"
