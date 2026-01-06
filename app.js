@@ -120,8 +120,11 @@ function Navbar() {
 // }
 
 function Hero() {
-  const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
-  const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
+ // const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
+  //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
+const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"; // ONLY the ID
+
+const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
     "Machine Learning Engineer",
