@@ -164,7 +164,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
             </button>
             <a
               className="btn hero-btn outline"
-              href="https://drive.google.com/file/d/18NODGIL1unKHp84bhmND40QKNEgjCwUl/view?usp=sharing"
+              href="https://docs.google.com/document/d/1XG2fih5wkRfLp37mIhvKoQtgK1Fs6w_Y/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
               target="_blank"
               rel="noreferrer"
             >
