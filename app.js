@@ -122,14 +122,14 @@ function Navbar() {
 function Hero() {
  // const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
   //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
-const FILE_ID = "1ibkbA3ffIxzxqryqvOt6j0IObnZDfNX5"; // ONLY the ID
+const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // ONLY the ID
 
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
+    
     "Data Engineer",
     "Software Engineer"
-
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -164,7 +164,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
             </button>
             <a
               className="btn hero-btn outline"
-              href="https://docs.google.com/document/d/1XG2fih5wkRfLp37mIhvKoQtgK1Fs6w_Y/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1ibkbA3ffIxzxqryqvOt6j0IObnZDfNX5/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
               target="_blank"
               rel="noreferrer"
             >
