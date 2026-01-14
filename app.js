@@ -122,7 +122,7 @@ function Navbar() {
 function Hero() {
  // const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
   //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
-const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // ONLY the ID
+const FILE_ID = "1ibkbA3ffIxzxqryqvOt6j0IObnZDfNX5"; // ONLY the ID
 
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
@@ -374,36 +374,38 @@ function Experience() {
             </div>
           </div>
           <div className="experience-right">
-            <h3 className="exp-role">Data Scientist</h3>
+            <h3 className="exp-role">Data Engineer</h3>
             <div className="exp-meta">
               Digient Technology Private Limited, Chennai, India &nbsp;|&nbsp; June 2021 – Nov 2023
             </div>
             <ul className="exp-list">
               <li>
-                Built regression, classification, and deep learning models for
-                analytics and signal-processing problems.
+                Built end-to-end ETL pipelines using Python, PySpark, Airflow, and PostgreSQL, processing structured and semi-structured data to support analytics and reporting workflows, reducing manual processing time by 70%.
               </li>
               <li>
-                Optimized simulation thresholds, saving 30% CPU time using AWS EC2, MLflow, and Docker
+                •	Designed and maintained batch and streaming pipelines with Kafka and AWS, enabling real-time ingestion, transformation, and storage of large-scale data sets.
               </li>
               <li>
-                Designed ETL pipelines with Airflow and PostgreSQL, accelerating report delivery by 25%
+                Implemented data quality checks (DDT) and monitoring frameworks to detect anomalies, enforce schema validation, and ensure reliable pipeline execution, reducing failures by 20%.
               </li>
               <li>
-                Developed predictive maintenance models with SHAP interpretation, reducing failures by 20%
+                Optimized cloud-based workflows using AWS, Docker, and Airflow, improving resource utilization by 30% and accelerating data processing and reporting.
               </li>
               <li>
-                Managed ML lifecycle with Airflow, MLflow, and Terraform; delivered insights via Tableau
+                Delivered automated dashboards and reporting pipelines using Tableau and Power BI, providing stakeholders with accurate, timely, and actionable insights.
               </li>
+              
             </ul>
             <div className="exp-tags">
               <span className="badge">Python</span>
-              <span className="badge">ML</span>
               <span className="badge">SQL</span>
-              <span className="badge">Spark</span>
+              <span className="badge">PySpark</span>
               <span className="badge">Airflow</span>
               <span className="badge">ELT Pipelines</span>
               <span className="badge">AWS</span>
+              <span className="badge">Power BI</span>
+              <span className="badge">Tableau</span>
+
             </div>
           </div>
         </div>
@@ -420,16 +422,19 @@ function Experience() {
             </div>
             <ul className="exp-list">
               <li>
-                Designed and built scalable ETL / ELT pipelines to process real-time gameplay events, player telemetry, and transaction logs for analytics and ML use cases.
+                Designed and built scalable ETL/ELT pipelines to process real-time gameplay events, player telemetry, and transaction logs, enabling analytics and ML use cases across product and data teams. 
               </li>
               <li>
-                Developed and optimized data models and data warehouses to support insights on player behavior, retention, churn, monetization, and in-game activity trends.
+                Developed and optimized data models and data warehouses to support insights on player behavior, retention, churn, monetization, and in-game activity trends, improving reporting speed and reliability. 
               </li>
               <li>
-               Implemented streaming data solutions using Spark / Kafka to enable near real-time dashboards and live decision-making for product and game teams.
+               Implemented streaming data solutions using Spark and Kafka to power near real-time dashboards and decision-making systems for product and business stakeholders. 
               </li>
               <li>
-                Collaborated with game developers, data scientists, and business teams to deliver reliable data systems supporting personalization, fraud detection, and A/B testing.
+                Built Node.js–based backend services and data APIs to expose gameplay events and telemetry processed by ETL and streaming pipelines to dashboards and internal tools.
+              </li>
+              <li>
+                Collaborated closely with game developers, data scientists, and business teams to deliver robust data infrastructure supporting personalization, fraud detection, and A/B testing initiatives.
               </li>
             </ul>
             <div className="exp-tags">
@@ -437,6 +442,7 @@ function Experience() {
               <span className="badge">SQL</span>
                <span className="badge">Node.js</span>
               <span className="badge">Kafka</span>
+              <span className="badge">Spark</span>
               <span className="badge">Data Modeling</span>
             </div>
           </div>
@@ -450,13 +456,13 @@ function Experience() {
 function Projects() {
   const projects = [
     {
-      title: "Advanced Machine Learning Regression System for Housing Price Forecasting",
-      desc: "Built an end-to-end ML regression platform for housing price prediction, covering data validation, feature engineering, model development, experiment tracking, real-time inference, automated deployment pipeline, and scalable production deployment",
-      tags: ["Python", "TensorFlow", "Airflow", "Scikit-learn", "MLflow", "FastAPI",'Docker',"GitHub Actions","AWS"],
+      title: "ETL and Analytics Pipeline for Retail Data",
+      desc: "Developed an end-to-end ETL and analytics pipeline to process retail sales, customer, and product data, enabling faster reporting, analytics, and business insights. The project focused on data extraction, transformation, quality validation, and automation of pipelines",
+      tags: ["Python", "SQL","Pyspark", "Airflow", "DDT", "ETL","Data Modeling",'Docker',"GitHub Actions","AWS"],
     },
     {
-      title: "Customer Segmentation & Revenue Forecasting",
-      desc: "Segmented customer behavior with K-Means on large datasets, engineered features, and built dashboards that improved marketing ROI.",
+      title: "Real-Time Gaming Event Pipeline",
+      desc: "It focused on streaming ingestion, data transformation, monitoring, and automation of batch and streaming workflows",
       tags: ["SQL", "Hive", "Tableau", "Python"],
     },
     {
@@ -464,11 +470,7 @@ function Projects() {
   desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
   tags: ["SQL", "ETL Pipelines", "Data Warehouse","Star Schema", "Git"]
 }, 
-{
-  title: "Dev Tinder Matching App",
-  desc: "Built cross-platform MVP using React Native & React.js with Node/Express backend; implemented auth, MongoDB data layer, AI-driven audio pipeline, and landing site with Git-based workflow.",
-  tags: ["React Native", "React.js", "Node.js", "Express.js", "MongoDB", "AI Pipeline", "Tailwind CSS"]
-}
+
 
 
   ];
