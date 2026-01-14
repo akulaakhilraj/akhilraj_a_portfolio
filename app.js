@@ -127,9 +127,9 @@ const FILE_ID = "1ibkbA3ffIxzxqryqvOt6j0IObnZDfNX5"; // ONLY the ID
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
-    "Machine Learning Engineer",
-    "Data Scientist",
     "Data Engineer",
+    "Software Engineer"
+
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
