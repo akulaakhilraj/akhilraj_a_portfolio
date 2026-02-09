@@ -127,9 +127,7 @@ const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // ONLY the ID
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
-    
-    "Data Engineer",
-    "Software Engineer"
+    "Full-Stack Software Engineer"
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -151,9 +149,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
             <span className="hero-ml">{currentRole}</span>
           </div>
           <p className="hero-desc">
-            I design and develop efficient data pipelines, create insightful
-            visualizations, and build machine learning solutions. Passionate
-            about data-driven decision making and continuous learning.
+            I build AI-powered analytics tools and scalable full-stack applications using Node.js, React, Python, SQL, and OpenAI APIs.
           </p>
           <div className="btn-row">
             <button
@@ -253,10 +249,12 @@ function About() {
 
         <div className="card">
           <p>
-            I’m Akhil Raj Akula — a data scientist who doesn’t just build models, but builds momentum. I specialize in transforming raw, high-dimensional data into clear, actionable intelligence that drives decisions, reduces risk, and unlocks opportunity.
+            I’m a software engineer and Generative AI enthusiast who builds full-stack, data-driven applications that deliver actionable insights and scalable solutions. 
+            I specialize in creating AI-powered tools, analytics platforms, and backend services that transform raw data into real-world results.
         </p>
         <p>
-            My work lives at the intersection of machine learning, data engineering, and software development. From predictive modeling and anomaly detection to scalable pipelines and real-time analytics, I bring both technical depth and clarity to every project. I work end-to-end using Python, SQL, TensorFlow, Scikit-learn, Pandas, and NumPy, and I build reliable, production-ready solutions using Node.js, JavaScript, React.js, REST APIs, Git, Docker, and AWS/GCP — ensuring my models don’t just work in notebooks, but perform in the real world.
+            My work sits at the intersection of full-stack development, cloud engineering, and Generative AI. From building REST APIs and scalable backend pipelines to integrating LLM-powered workflows and AI-driven analytics, I bring both technical depth and practical implementation skills to every project. 
+          I work end-to-end using Node.js, React.js, Python, SQL, LangChain, OpenAI API, Docker, and AWS, ensuring solutions are production-ready, maintainable, and optimized for performance.
           </p>
         </div>
 
@@ -265,21 +263,22 @@ function About() {
           <div className="info-card">
             <h4>Education</h4>
             <p>MS in Data Science & Analytics</p>
+            <p>(Focus: AI, Analytics & Software System)</p>
           </div>
 
           <div className="info-card">
             <h4>Core Strength</h4>
-            <p>Data Science, Machine Learning, Data Engineering & ETL Pipelines</p>
+            <p>Full-Stack Engineering, Generative AI (LLMs), Backend & Analytics Systems</p>
           </div>
 
           <div className="info-card">
             <h4>Career Goal</h4>
-            <p>Build scalable data + AI systems that drive real business impact</p>
+            <p>Build scalable full-stack and AI-powered systems that solve real business problems</p>
           </div>
 
           <div className="info-card">
             <h4>Passion</h4>
-            <p>Tech Innovation, Science & Sports</p>
+            <p>Tech Innovation, AI, Science & Sports</p>
           </div>
         </div>
       </div>
@@ -295,40 +294,43 @@ function Skills() {
   const groups = useMemo(
     () => [
       {
-        title: "Data Scientist",
+        title: "Programming & Backend",
         items: [
-          "Python",
-          "SQL",
-          "Jupyter",
-          "Pandas",
-          "NumPy",
-          "Predictive Modeling",
-          "EDA",
-          "A/B Testing",
+          "JavaScript",
+          "Node.js",
+          "Express.js",
+          "TypeScipt",
+          "Python (data processing & AI workflows)",
+          "RESTful APIs, Authentication & Authorization (JWT)"
         ],
       },
       {
-        title: "ML & Modeling",
+        title: "Data & Analytics",
         items: [
-          "XGBoost",
-          "TensorFlow",
-          "PyTorch",
-          "Clustering",
-          "Feature Engineering",
-          "Model Deployment",
+          "Data Modeling",
+        "ETL Pipelines",
+        "Data Validation & Aggregation",
+        "Pandas", "NumPy",
+        "Exploratory Data Analysis (EDA)",
         ],
       },
       {
-        title: "Data Engineering & Warehousing",
-        items: ["Spark", "Airflow", "Kafka", "Data Modeling","Data Warehouse", "Stored Procedures & DDL", "ETL Pipelines"],
+        title: "Generative AI & LLMs",
+        items: ["OpenAI API (GPT)",
+
+"LangChain",
+
+"Retrieval-Augmented Generation (RAG)",
+
+"Prompt Engineering",
+
+"Vector Databases",
+"AI API Integration"],
       },
-      {
-         title: "Backend & APIs",
-        items: ["Node.js", "Express.js", "RESTful APIs", "Authentication & Authorization","MongoDB", "API Integration"],
-      },
+      
       {
         title: "Cloud & DevOps",
-        items: ["AWS", "Docker", "Kubernetes", "Terraform", "MLflow","Git", "Postman" ],
+        items: ["AWS", "Docker", "CI/CD","Git", "Postman" ],
       },
       {
         title: "Visualization & Tools",
@@ -374,105 +376,144 @@ function Experience() {
             </div>
           </div>
           <div className="experience-right">
-            <h3 className="exp-role">Data Engineer</h3>
+            <h3 className="exp-role">Software Engineer</h3>
             <div className="exp-meta">
-              Digient Technology Private Limited, Chennai, India &nbsp;|&nbsp; June 2021 – Nov 2023
+              Digient Technology Private Limited, Chennai, India &nbsp;|&nbsp; Jan 2020 – Dec 2023
             </div>
+            <p>Worked on building scalable full-stack applications and backend services for data-driven business workflows.</p>
             <ul className="exp-list">
               <li>
-                Built end-to-end ETL pipelines using Python, PySpark, Airflow, and PostgreSQL, processing structured and semi-structured data to support analytics and reporting workflows, reducing manual processing time by 70%.
+                Designed and developed scalable backend services using Node.js and Express, handling REST APIs for authentication, data ingestion, and business logic.
               </li>
               <li>
-                •	Designed and maintained batch and streaming pipelines with Kafka and AWS, enabling real-time ingestion, transformation, and storage of large-scale data sets.
+                Delivered end-to-end full-stack features using React.js and Node.js, improving page load performance by 30–40% through optimized APIs and state management.
+                </li>
+              <li>
+                Implemented JWT-based authentication and role-based access control, securing APIs and reducing unauthorized access issues.
               </li>
               <li>
-                Implemented data quality checks (DDT) and monitoring frameworks to detect anomalies, enforce schema validation, and ensure reliable pipeline execution, reducing failures by 20%.
+                
+                Integrated MySQL with optimized queries and indexing, improving database response times by 35%.
               </li>
               <li>
-                Optimized cloud-based workflows using AWS, Docker, and Airflow, improving resource utilization by 30% and accelerating data processing and reporting.
+                Containerized services using Docker and deployed applications on cloud infrastructure for consistent environments.
               </li>
-              <li>
-                Delivered automated dashboards and reporting pipelines using Tableau and Power BI, providing stakeholders with accurate, timely, and actionable insights.
-              </li>
+              <li>Collaborated with product and engineering teams in agile sprints to ship reliable, production-ready features.</li>
               
             </ul>
             <div className="exp-tags">
-              <span className="badge">Python</span>
-              <span className="badge">SQL</span>
-              <span className="badge">PySpark</span>
-              <span className="badge">Airflow</span>
-              <span className="badge">ELT Pipelines</span>
-              <span className="badge">AWS</span>
-              <span className="badge">Power BI</span>
-              <span className="badge">Tableau</span>
+  <span className="badge">Node.js</span>
+  <span className="badge">Express.js</span>
+  <span className="badge">React.js</span>
+  <span className="badge">Python</span>
+  <span className="badge">JavaScript</span>
+  <span className="badge">REST APIs</span>
+  <span className="badge">JWT Auth</span>
+  <span className="badge">SQL</span>
+  <span className="badge">Docker</span>
+  <span className="badge">AWS</span>
+</div>
 
-            </div>
           </div>
         </div>
-          <div className="card experience-card">
-          <div className="experience-left">
-            <div className="exp-logo-circle">
-              <span className="exp-logo-text">IP</span>
-            </div>
-          </div>
-          <div className="experience-right">
-            <h3 className="exp-role">Software Engineer</h3>
-            <div className="exp-meta">
-              India Plays, Chennai, India &nbsp;|&nbsp; June 2020 – May 2021
-            </div>
-            <ul className="exp-list">
-              <li>
-                Designed and built scalable ETL/ELT pipelines to process real-time gameplay events, player telemetry, and transaction logs, enabling analytics and ML use cases across product and data teams. 
-              </li>
-              <li>
-                Developed and optimized data models and data warehouses to support insights on player behavior, retention, churn, monetization, and in-game activity trends, improving reporting speed and reliability. 
-              </li>
-              <li>
-               Implemented streaming data solutions using Spark and Kafka to power near real-time dashboards and decision-making systems for product and business stakeholders. 
-              </li>
-              <li>
-                Built Node.js–based backend services and data APIs to expose gameplay events and telemetry processed by ETL and streaming pipelines to dashboards and internal tools.
-              </li>
-              <li>
-                Collaborated closely with game developers, data scientists, and business teams to deliver robust data infrastructure supporting personalization, fraud detection, and A/B testing initiatives.
-              </li>
-            </ul>
-            <div className="exp-tags">
-              <span className="badge">Python</span>
-              <span className="badge">SQL</span>
-               <span className="badge">Node.js</span>
-              <span className="badge">Kafka</span>
-              <span className="badge">Spark</span>
-              <span className="badge">Data Modeling</span>
-            </div>
-          </div>
-        </div>
+         
       </div>
     </section>
   );
 }
 
 
+// function Projects() {
+//   const projects = [
+//     {
+//       title: "ETL and Analytics Pipeline for Retail Data",
+//       desc: "Developed an end-to-end ETL and analytics pipeline to process retail sales, customer, and product data, enabling faster reporting, analytics, and business insights. The project focused on data extraction, transformation, quality validation, and automation of pipelines",
+//       tags: ["Python", "SQL","Pyspark", "Airflow", "DDT", "ETL","Data Modeling",'Docker',"GitHub Actions","AWS"],
+//     },
+//     {
+//       title: "Real-Time Gaming Event Pipeline",
+//       desc: "It focused on streaming ingestion, data transformation, monitoring, and automation of batch and streaming workflows",
+//       tags: ["SQL", "Hive", "Tableau", "Python"],
+//     },
+//     {
+//   title: "Enterprise Data Warehouse & SQL ETL System",
+//   desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
+//   tags: ["SQL", "ETL Pipelines", "Data Warehouse","Star Schema", "Git"]
+// }, 
+
+
+
+//   ];
+
+//   return (
+//     <section className="section" id="projects">
+//       <div className="container">
+//         <SectionTitle title="Projects" />
+//         <div className="projects">
+//           {projects.map((p) => (
+//             <div className="card project-card" key={p.title}>
+//               <h3 className="project-title">{p.title}</h3>
+//               <p className="sub">{p.desc}</p>
+//               <div className="badges">
+//                 {p.tags.map((t) => (
+//                   <span className="badge" key={t}>
+//                     {t}
+//                   </span>
+                
+//                 ))}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 function Projects() {
   const projects = [
     {
-      title: "ETL and Analytics Pipeline for Retail Data",
-      desc: "Developed an end-to-end ETL and analytics pipeline to process retail sales, customer, and product data, enabling faster reporting, analytics, and business insights. The project focused on data extraction, transformation, quality validation, and automation of pipelines",
-      tags: ["Python", "SQL","Pyspark", "Airflow", "DDT", "ETL","Data Modeling",'Docker',"GitHub Actions","AWS"],
+      title: "Generative AI Powered Analytics Assistant",
+      desc: "Built a full-stack Generative AI application that enables natural-language querying over structured datasets. Implemented Retrieval-Augmented Generation (RAG) workflows to provide context-aware, accurate responses for business analytics use cases.",
+      tags: [
+        "Node.js",
+        "React.js",
+        "Python",
+        "LangChain",
+        "OpenAI API",
+        "RAG",
+        "Vector DB",
+        "SQL",
+        "Docker",
+        "AWS"
+      ],
     },
     {
-      title: "Real-Time Gaming Event Pipeline",
-      desc: "It focused on streaming ingestion, data transformation, monitoring, and automation of batch and streaming workflows",
-      tags: ["SQL", "Hive", "Tableau", "Python"],
+      title: "Full-Stack Analytics Platform",
+      desc: "Developed a full-stack analytics platform to ingest, process, and visualize structured data from CSV, JSON, and relational sources, enabling self-service reporting and faster decision-making.",
+      tags: [
+        "Node.js",
+        "React.js",
+        "Python",
+        "PostgreSQL",
+        "REST APIs",
+        "Data Modeling",
+        "ETL Pipelines",
+        "Docker"
+      ],
     },
     {
-  title: "Enterprise Data Warehouse & SQL ETL System",
-  desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
-  tags: ["SQL", "ETL Pipelines", "Data Warehouse","Star Schema", "Git"]
-}, 
-
-
-
+      title: "Enterprise Data Warehouse & SQL ETL System",
+      desc: "Designed a scalable data warehouse using bronze silver–gold layers and built SQL-based ETL pipelines to transform CRM and ERP data into analytics-ready star schema models.",
+      tags: [
+        "SQL",
+        "ETL Pipelines",
+        "Data Warehouse",
+        "Star Schema",
+        "Data Modeling",
+        "Git"
+      ],
+    },
   ];
 
   return (
@@ -489,7 +530,6 @@ function Projects() {
                   <span className="badge" key={t}>
                     {t}
                   </span>
-                
                 ))}
               </div>
             </div>
@@ -499,6 +539,8 @@ function Projects() {
     </section>
   );
 }
+
+
 
 function Contact() {
   const [status, setStatus] = useState("");

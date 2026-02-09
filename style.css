@@ -513,6 +513,9 @@ textarea {
 .exp-tags .badge:nth-child(5) { background: #f87171; } 
 .exp-tags .badge:nth-child(6) { background: #06b6d4; } 
 .exp-tags .badge:nth-child(7) { background: grey; } 
+.exp-tags .badge:nth-child(8) { background: #eab308; } 
+.exp-tags .badge:nth-child(9) { background: #8b5cf6; } 
+.exp-tags .badge:nth-child(10) { background: #3b82f6; }
 
 
 .exp-tags {
@@ -566,4 +569,72 @@ textarea {
 .info-card p {
   color: #e3edf7;
   font-size: 13px;
+}
+
+.exp-tags .badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+/* hover */
+.exp-tags .badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+}
+
+/* click */
+.exp-tags .badge:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) inset;
+}
+
+
+.project-card .badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+}
+
+.project-card .badge:nth-child(1) { background: #22c55e; } /* Node.js */
+.project-card .badge:nth-child(2) { background: #3b82f6; } /* Express */
+.project-card .badge:nth-child(3) { background: #facc15; color: #1f2937; } /* React */
+.project-card .badge:nth-child(4) { background: #8b5cf6; } /* Python */
+.project-card .badge:nth-child(5) { background: #f97316; } /* JavaScript */
+.project-card .badge:nth-child(6) { background: #06b6d4; } /* REST */
+.project-card .badge:nth-child(7) { background: #6b7280; } /* JWT */
+.project-card .badge:nth-child(8) { background: #eab308; color: #1f2937; } /* SQL */
+.project-card .badge:nth-child(9) { background: #2563eb; } /* Docker */
+.project-card .badge:nth-child(10) { background: #1d4ed8; } /* AWS */
+
+
+.project-card .badge {
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+  cursor: pointer;
+}
+
+
+.project-card .badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+}
+
+.project-card .badge:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) inset;
 }
