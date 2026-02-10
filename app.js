@@ -33,91 +33,7 @@ function Navbar() {
   );
 }
 
-/* ============= HERO (purple layout) ============= */
-// function Hero() {
-//   const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // your drive photo
-//   const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
-//   return (
-//     <section className="hero" id="home">
-//       <div className="container hero-grid">
-//         {/* LEFT TEXT */}
-//         <div className="hero-left">
-//           <h2 className="hero-pre">Hi, I'm</h2>
-//           <h1 className="hero-name">Akhil Raj Akula</h1>
-
-//           <div className="hero-ml-line">
-//             <span className="hero-ml">Machine Learning</span>
-           
-//           </div>
-
-//           <p className="hero-role">Data Engineer &amp; Data Scientist</p>
-
-//           <p className="hero-desc">
-//             I design and develop efficient data pipelines, create insightful
-//             visualizations, and build machine learning solutions. Passionate
-//             about data-driven decision making and continuous learning.
-//           </p>
-
-//           <div className="btn-row">
-//             <button
-//               className="btn hero-btn primary"
-//               type="button"
-//               onClick={() => scrollToId("projects")}
-//             >
-//               View My Work
-//             </button>
-//             <a
-//               className="btn hero-btn outline"
-//               href="https://docs.google.com/document/d/1p1ofsprXIXUnNf4pN_nEaq3VSfqmIPT9/edit"
-//               target="_blank"
-//               rel="noreferrer"
-//             >
-//               Download Resume
-//             </a>
-//           </div>
-
-//           <div className="hero-stats">
-//             <div className="stat-card">
-//               <div className="stat-number">3 +</div>
-//               <div className="stat-label">Years Experience</div>
-//             </div>
-//             <div className="stat-card">
-//               <div className="stat-number">10 +</div>
-//               <div className="stat-label">Projects Completed</div>
-//             </div>
-//             <div className="stat-card">
-//               <div className="stat-number">7 +</div>
-//               <div className="stat-label">Technologies</div>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* RIGHT PHOTO */}
-//         <div className="hero-right">
-//           <div className="photo-orbit">
-//             <div className="photo-circle">
-//               <img
-//                 src={profileUrl}
-//                 alt="Akhil Raj Akula"
-//                 className="photo-img"
-//                 referrerPolicy="no-referrer"
-//                 onError={(e) => {
-//                   e.currentTarget.src = `https://lh3.googleusercontent.com/d/${FILE_ID}`;
-//                 }}
-//               />
-//             </div>
-
-//             {/* Floating icons */}
-//             <div className="orbit-icon orbit-icon-top">≡</div>
-//             <div className="orbit-icon orbit-icon-left">📈</div>
-//             <div className="orbit-icon orbit-icon-right">{"</>"}</div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 function Hero() {
  // const FILE_ID = "https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=drive_link"; // your drive photo
@@ -158,14 +74,14 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
               onClick={() => scrollToId("projects")}>
               View My Work
             </button>
-            <a
+            {/* <a
               className="btn hero-btn outline"
-              href="https://drive.google.com/file/d/1WlUdfgJGamDO4U_jHHEyCw2Z5Hreezji/view?usp=sharing"
+              href="https://drive.google./file/d/1WlUdfgJGamDO4U_jHHEyCw2Z5Hreezji/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
               Download Resume
-            </a>
+            </a> */}
           </div>
 
           <div className="hero-stats">
