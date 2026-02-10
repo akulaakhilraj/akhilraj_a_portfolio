@@ -160,7 +160,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
             </button>
             <a
               className="btn hero-btn outline"
-              href="https://docs.google.com/document/d/1ibkbA3ffIxzxqryqvOt6j0IObnZDfNX5/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
+              href="https://drive.google.com/file/d/1WlUdfgJGamDO4U_jHHEyCw2Z5Hreezji/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -265,7 +265,6 @@ function About() {
             <p>MS in Data Science & Analytics</p>
             <p>(Focus: AI, Analytics & Software System)</p>
           </div>
-
           <div className="info-card">
             <h4>Core Strength</h4>
             <p>Full-Stack Engineering, Generative AI (LLMs), Backend & Analytics Systems</p>
@@ -618,6 +617,10 @@ function Contact() {
 //     </div>
 //   );
 // }
+
+
+
+
 
 function Footer() {
   return (
