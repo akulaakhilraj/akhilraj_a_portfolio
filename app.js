@@ -174,7 +174,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">6 +</div>
+              <div className="stat-number">5 +</div>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-card">
